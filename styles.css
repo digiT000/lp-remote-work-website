@@ -1,0 +1,103 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+:root {
+  --white: hsl(0, 0%, 98%);
+  --gray: hsl(0, 0%, 41%);
+  --black: hsl(0, 0%, 8%);
+}
+
+body {
+  font-family: "Epilogue", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  margin: 0;
+}
+
+p {
+  font-weight: 500;
+  margin: 0;
+}
+
+/* HIDE IN MOBILE */
+.menuDesktop {
+  display: none;
+}
+.desktopImage {
+  display: none;
+}
+/* GLOBAL */
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 16px;
+}
+.header-1 {
+  font-size: 3rem;
+  line-height: 110%;
+}
+.body-text {
+  font-size: 1.25rem;
+  line-height: 150%;
+}
+
+/* BUTTON */
+.btn {
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 16px 16px;
+  max-height: 48px;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  width: fit-content;
+}
+.btn-primary {
+  background-color: var(--black);
+  color: var(--white);
+  width: fit-content;
+}
+
+/* NAVIGATION */
+.navWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* HERO SECTION */
+.imgHero {
+  width: 100%;
+  object-fit: cover;
+}
+.heroContent {
+  margin-top: 3rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* LOGO LIST */
+.logoWrapper {
+  padding: 20px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+  place-items: center;
+}
+.logo-item {
+  height: 16px;
+}
